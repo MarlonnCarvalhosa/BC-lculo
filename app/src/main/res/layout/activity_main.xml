@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ligth_pink"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bau_marrom"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/madeira"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/remove_bau_marrom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@color/brow"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:background="@color/transparente"
+        app:layout_constraintEnd_toStartOf="@+id/text_quantidade_bau_marrom"
+        android:src="@drawable/ic_baseline_remove_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_marrom"
+        app:layout_constraintStart_toEndOf="@+id/bau_marrom"
+        app:layout_constraintTop_toTopOf="@+id/bau_marrom" />
+
+    <TextView
+        android:id="@+id/text_quantidade_bau_marrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="@color/brow"
+        android:fontFamily="@font/aldrich"
+        app:layout_constraintEnd_toStartOf="@+id/add_bau_marrom"
+        app:layout_constraintBottom_toBottomOf="@+id/remove_bau_marrom"
+        app:layout_constraintStart_toEndOf="@+id/remove_bau_marrom"
+        app:layout_constraintTop_toTopOf="@+id/remove_bau_marrom" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_bau_marrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:tint="@color/brow"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_marrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_quantidade_bau_marrom"
+        app:layout_constraintTop_toTopOf="@+id/bau_marrom" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bau_roxo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_margin="40dp"
+        android:src="@drawable/ferro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bau_marrom" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/remove_bau_roxo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/transparente"
+        android:tint="@color/brow"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/text_quantidade_bau_roxo"
+        android:src="@drawable/ic_baseline_remove_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_roxo"
+        app:layout_constraintStart_toEndOf="@+id/bau_roxo"
+        app:layout_constraintTop_toTopOf="@+id/bau_roxo" />
+
+    <TextView
+        android:id="@+id/text_quantidade_bau_roxo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/brow"
+        app:layout_constraintBottom_toBottomOf="@+id/remove_bau_roxo"
+        app:layout_constraintEnd_toStartOf="@+id/add_bau_roxo"
+        app:layout_constraintStart_toEndOf="@+id/remove_bau_roxo"
+        app:layout_constraintTop_toTopOf="@+id/remove_bau_roxo" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_bau_roxo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:tint="@color/brow"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_roxo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_quantidade_bau_roxo"
+        app:layout_constraintTop_toTopOf="@+id/bau_roxo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bau_amarelo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/ouro"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bau_roxo" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/remove_bau_amarelo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/transparente"
+        android:tint="@color/brow"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/text_quantidade_bau_amarelo"
+        android:src="@drawable/ic_baseline_remove_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_amarelo"
+        app:layout_constraintStart_toEndOf="@+id/bau_amarelo"
+        app:layout_constraintTop_toTopOf="@+id/bau_amarelo" />
+
+    <TextView
+        android:id="@+id/text_quantidade_bau_amarelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/brow"
+        app:layout_constraintEnd_toStartOf="@+id/add_bau_amarelo"
+        app:layout_constraintBottom_toBottomOf="@+id/remove_bau_amarelo"
+        app:layout_constraintStart_toEndOf="@+id/remove_bau_amarelo"
+        app:layout_constraintTop_toTopOf="@+id/remove_bau_amarelo" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_bau_amarelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:tint="@color/brow"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_amarelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_quantidade_bau_amarelo"
+        app:layout_constraintTop_toTopOf="@+id/bau_amarelo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bau_azul"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/dima"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bau_amarelo" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/remove_bau_azul"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_baseline_remove_circle_24"
+        android:tint="@color/brow"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/text_quantidade_bau_azul"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_azul"
+        app:layout_constraintStart_toEndOf="@+id/bau_azul"
+        app:layout_constraintTop_toTopOf="@+id/bau_azul" />
+
+    <TextView
+        android:id="@+id/text_quantidade_bau_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/brow"
+        app:layout_constraintEnd_toStartOf="@+id/add_bau_azul"
+        app:layout_constraintBottom_toBottomOf="@+id/remove_bau_azul"
+        app:layout_constraintStart_toEndOf="@+id/remove_bau_azul"
+        app:layout_constraintTop_toTopOf="@+id/remove_bau_azul" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_bau_azul"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="6dp"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:tint="@color/brow"
+        app:layout_constraintBottom_toBottomOf="@+id/bau_azul"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+        app:layout_constraintStart_toEndOf="@+id/text_quantidade_bau_azul"
+        app:layout_constraintTop_toTopOf="@+id/bau_azul" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:background="@drawable/bg_button_radius"
+        android:backgroundTint="@color/brow"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bau_azul" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:text="@string/o_seu_lucro_no_mapa_ser_de"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/brow"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_result_bcoin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:textAlignment="center"
+        android:textColor="@color/brow"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/text"
+        app:layout_constraintStart_toStartOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/preçoDol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toStartOf="@+id/preçoReal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/preçoReal"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/preçoDol"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7014563526856796/1641252752"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

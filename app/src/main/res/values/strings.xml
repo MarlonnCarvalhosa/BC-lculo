@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BCálculo</string>
+    <string name="calcular">Calcular</string>
+    <string name="o_seu_lucro_no_mapa_ser_de">O seu lucro no mapa será de</string>
+</resources>
